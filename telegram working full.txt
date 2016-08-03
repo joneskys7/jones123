@@ -1,0 +1,53 @@
+sudo apt-get update 
+
+sudo apt-get upgrade
+
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libeventdev make
+
+git clone –recursive https://github.com/vysheng/tg.git  && cd tg
+
+sudo apt-get install libjasson-dev  #check for spelling mistake of libjanson
+
+#Go to pi folder in file manager, go to tg, then tgl and open mtproto-utlis.c file and add ‘*/’ in line 101 and 115 at beginning and end of line as comment.
+
+./configure 
+
+make
+
+sudo nano /home/pi/tg/action.lua
+
+bin/telegram-cli –k tg-server.pub –W –s action.lua
+
+sudo nano/home/pi/tag/action.lua
+
+#type below code in pop up
+
+function on_msg_receive (msg) 
+      if msg.out then 
+          return 
+      end 
+      if (msg.text=='ping') then 
+         send_msg (msg.from.print_name, 'pong', ok_cb, false) 
+      end 
+end 
+function on_our_id (id) 
+end  
+function on_secret_chat_created (peer) 
+end 
+function on_user_update (user) 
+end 
+function on_chat_update (user) 
+end  
+function on_get_difference_end () 
+end 
+
+#them it may ask your telegram phone number and otp
+
+#To send a message we use this command 
+
+msg Name_Lastname Your message  
+
+#To send a photo we use this command 
+
+send_photo Name_Lastname /folder/photo.jpg 
+ 

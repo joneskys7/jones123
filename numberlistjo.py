@@ -1,0 +1,107 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+pins=[7,8,10,11,13,15,16,18]
+list1=[9,8,7,6,5,4,3,2,1]
+for p in pins:
+    GPIO.setup(p,GPIO.OUT)
+    list1.reverse()
+    a=len(list1)
+    a=a-1
+    b=0
+while(b<=a):
+	print list1[a]
+	if list1[a]==1:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.HIGH)
+	        GPIO.output(10,GPIO.HIGH)
+	        GPIO.output(11,GPIO.HIGH)
+	        GPIO.output(13,GPIO.LOW)
+	        GPIO.output(15,GPIO.LOW)
+	        GPIO.output(16,GPIO.LOW)
+	        GPIO.output(18,GPIO.LOW)
+        	time.sleep(5)
+	elif list1[a]==2:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.LOW)
+	        GPIO.output(10,GPIO.HIGH)
+	        GPIO.output(11,GPIO.HIGH)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.HIGH)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	elif list1[a]==3:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.LOW)
+	        GPIO.output(10,GPIO.HIGH)
+	        GPIO.output(11,GPIO.HIGH)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.HIGH)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+
+	elif list1[a]==4:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.HIGH)
+	        GPIO.output(10,GPIO.LOW)
+	        GPIO.output(11,GPIO.LOW)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.HIGH)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	elif list1[a]==5:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.HIGH)
+	        GPIO.output(10,GPIO.HIGH)
+	        GPIO.output(11,GPIO.HIGH)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.LOW)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	elif list1[a]==6:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.HIGH)
+	        GPIO.output(10,GPIO.HIGH)
+	        GPIO.output(11,GPIO.HIGH)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.LOW)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	elif list1[a]==7:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.LOW)
+	        GPIO.output(10,GPIO.LOW)
+	        GPIO.output(11,GPIO.LOW)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.HIGH)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	elif list1[a]==8:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.HIGH)
+	        GPIO.output(10,GPIO.HIGH)
+	        GPIO.output(11,GPIO.HIGH)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.HIGH)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	elif list1[a]==9:
+	        GPIO.output(7,GPIO.HIGH)
+	        GPIO.output(8,GPIO.HIGH)
+	        GPIO.output(10,GPIO.LOW)
+	        GPIO.output(11,GPIO.LOW)
+	        GPIO.output(13,GPIO.HIGH)
+	        GPIO.output(15,GPIO.HIGH)
+	        GPIO.output(16,GPIO.HIGH)
+	        GPIO.output(18,GPIO.HIGH)
+        	time.sleep(5)
+	a=a-1
+GPIO.cleanup()
