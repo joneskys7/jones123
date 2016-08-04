@@ -2,13 +2,13 @@ sudo apt-get update
 
 sudo apt-get upgrade
 
-sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libeventdev make
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make
 
-git clone –recursive https://github.com/vysheng/tg.git  && cd tg
+git clone â€“recursive https://github.com/vysheng/tg.git  && cd tg
 
 sudo apt-get install libjasson-dev  #check for spelling mistake of libjanson
 
-#Go to pi folder in file manager, go to tg, then tgl and open mtproto-utlis.c file and add ‘*/’ in line 101 and 115 at beginning and end of line as comment.
+#Go to pi folder in file manager, go to tg, then tgl and open mtproto-utlis.c file and add â€˜*/â€™ in line 101 and 115 at beginning and end of line as comment.
 
 ./configure 
 
@@ -16,7 +16,7 @@ make
 
 sudo nano /home/pi/tg/action.lua
 
-bin/telegram-cli –k tg-server.pub –W –s action.lua
+bin/telegram-cli â€“k tg-server.pub â€“W â€“s action.lua
 
 sudo nano/home/pi/tag/action.lua
 
