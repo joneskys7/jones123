@@ -13,7 +13,7 @@ tf = "/home/pi/imagetext.txt"
 fo = open(tf)
 jp =  fo.read()
 print jp
-text_line= "espeak -ven -s150 " + "' "  +  jp + "' "
+text_line= "espeak -ven -s150 " + " ' "  +  jp + " ' "
 pg = shlex.split(text_line)
 print pg
 lo = subprocess.Popen(pg)
