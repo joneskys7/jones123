@@ -1,7 +1,16 @@
-sudo apt-get install xrdp(for remote desktop)
+sudo apt-get install xrdp  #(for remote desktop)
+
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install motion(for camera installation)
-Sudo apt-get install espeak & Sudo apt-get install tesseract-ocr(for text to speak) & sudo raspi-config(after tat advance then audio)
-sudo apt-get install python-gpiozero(for Laser tripwire)
+
+sudo apt-get install motion #(for camera installation)
+
+sudo apt-get install espeak #(for text to speak)
+sudo apt-get install tesseract-ocr #(for text to speak) 
+sudo raspi-config #(after tat advance then audio)
+
+
+sudo apt-get install python-gpiozero #(for Laser tripwire)
+sudo apt-get install python-dev #(for laser trip wire in rare cases)
+
 ./configure(for folder config) & (after that we have to use) "take"
