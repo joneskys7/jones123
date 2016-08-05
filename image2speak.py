@@ -1,6 +1,6 @@
 #sudo apt-get install espeak 
 #sudo apt-get install tesseract-ocr
-#sudo rasp-config
+#sudo raspi-config
 #then advance settings on 3.5 output
 #image.jpg in pi folder
 #imagetext.txt will be auto created
