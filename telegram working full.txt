@@ -4,9 +4,9 @@ sudo apt-get upgrade
 
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make
 
-git clone –recursive https://github.com/vysheng/tg.git  && cd tg
+git clone –-recursive https://github.com/vysheng/tg.git  && cd tg
 
-sudo apt-get install libjasson-dev  #check for spelling mistake of libjanson
+sudo apt-get install libjansson-dev  #check for spelling mistake of libjansson
 
 #Go to pi folder in file manager, go to tg, then tgl and open mtproto-utlis.c file and add ‘*/’ in line 101 and 115 at beginning and end of line as comment.
 
@@ -50,4 +50,3 @@ msg Name_Lastname Your message
 #To send a photo we use this command 
 
 send_photo Name_Lastname /folder/photo.jpg 
- 
