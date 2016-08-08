@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO 
 import time i
-mport spidev 
+import spidev 
 import time 
 import os GPIO.setmode(GPIO.BOARD) 
 GPIO.setwarnings(False) 
