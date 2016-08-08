@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO 
-import time i
+import time
 import spidev 
 import time 
 import os GPIO.setmode(GPIO.BOARD) 
