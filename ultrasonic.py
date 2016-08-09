@@ -1,7 +1,5 @@
 import RPi.GPIO as GPIO
 import time
-start=0
-stop=0
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 GPIO.setup(11,GPIO.IN)  
