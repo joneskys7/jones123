@@ -2,7 +2,8 @@ import RPi.GPIO as GPIO
 import time
 import spidev 
 import time 
-import os GPIO.setmode(GPIO.BOARD) 
+import os 
+GPIO.setmode(GPIO.BOARD) 
 GPIO.setwarnings(False) 
 GPIO.setup(40,GPIO.IN) 
 GPIO.setup(37,GPIO.OUT) 
