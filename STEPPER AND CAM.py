@@ -1,4 +1,4 @@
-#very long program
+#camera and stepper
 #it should take 16 images and stepper motor should turn one complete rotation.
 #download this code in raspberry pi using the following commands in raspberry pi:
 
