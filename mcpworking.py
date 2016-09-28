@@ -17,6 +17,6 @@ gas_channel = 0
 for i in range(1000):
     gas_level = ReadChannel(gas_channel)
     print "--------------------------------------------"
-    print("Gas: {}".format(gas_level))
+    print("signa: {}".format(gas_level))
     time.sleep(0.1)
 GPIO.cleanup()
